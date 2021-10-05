@@ -1,0 +1,23 @@
+<%- include("../partials/header.ejs") %> 
+<div class="d-grid gap-3">
+    
+
+       <% for(let cluck of list) {%>
+
+        <div class="p-2 bg-light border">
+   
+        <div class="m-4">
+            <img src='image/rooster.png'  width="42" height="42" style="float:left" alt="...">
+            
+            <p style="float:left"><%= cluck.username%></p>
+            <br>
+            <p><%= cluck.content %></p>
+        </div>
+    </div>
+        
+    <% } %>
+
+</div>  
+
+
+<%- include("../partials/footer.ejs") %> 

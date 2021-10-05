@@ -1,0 +1,22 @@
+body{
+   
+  border: 5px solid gray;
+  width: 800px;
+  margin:100px;
+  
+  
+  
+ 
+}
+
+.brand{
+    width: 46px;
+    height: 46px;  
+    overflow: hidden;
+    margin-top: -6px;
+
+}
+
+
+
+

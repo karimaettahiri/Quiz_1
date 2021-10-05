@@ -1,0 +1,28 @@
+<%- include("../partials/header.ejs") %> 
+
+   
+<form method="POST" action="/clucks">
+    <div class="d-grid gap-3">
+    <div class="p-2 bg-light border">
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <input type="text" class="form-control" name="content" placeholder="Whatchoo cluckin bout?">
+          </div>
+    </div>
+
+    <div class="p-2 bg-light border">
+        <label for="imageUrl" class="form-label">Image Url</label>
+        <br>
+        <input type="url" class="form-control" name="imageUrl" placeholder="e.g.https://www.example.com/some.png">
+    </div>
+    
+
+    
+    
+    <br>
+    
+    <input type="submit" class="m-3 btn btn-outline-success" value="cluck!">
+</div>
+</form>
+
+<%- include("../partials/footer.ejs") %> 
