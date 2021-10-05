@@ -1,0 +1,30 @@
+<%- include("./partials/header.ejs") %> 
+<div class="d-grid gap-3">
+   
+
+<% if (username) { %>
+    <div class="p-2 bg-light border">
+    <li>
+      <span> <%- username %> </span>
+      
+      <form action="/sign_out" method="POST">
+        <button type="submit" class='m-3 btn btn-outline-dark'>Sign Out</button>
+      </form>
+    </li>
+</div>
+  <% } else { %>
+    <div class="p-2 bg-light border"></div>
+  <li>
+    <form action="/sign_in" method="POST" class='form-inline'>
+        <label class="m-3" for="username">Username</label>
+      <input class=' form-control mr-2' name='username' placeholder='e.g Madam Welminster'>
+      <br>
+      <button type='submit' class="movebutton"class=' btn btn-outline-dark'>Sign In</button>
+    </form>
+  </li> 
+  <div class="p-2 bg-light border"></div>
+  <% } %> 
+</div>
+
+
+<%- include("./partials/footer.ejs") %> 
